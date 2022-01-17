@@ -20,11 +20,6 @@ public class Transaction {
 	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Account account;
-	
-//	@CreationTimestamp
-//	@Temporal(TemporalType.TIMESTAMP)
-//	@Column(nullable = false, updatable = false)
-//	private Timestamp timestamp;
 
 	public Transaction() {
 		super();
@@ -70,14 +65,5 @@ public class Transaction {
 	public void setType(TransactionType type) {
 		this.type = type;
 	}
-
-
-//	public Timestamp getTimestamp() {
-//		return timestamp;
-//	}
-//
-//	public void setTimestamp(Timestamp timestamp) {
-//		this.timestamp = timestamp;
-//	}
 
 }
